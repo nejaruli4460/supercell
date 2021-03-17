@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(bg.jpg);
+    background-size: cover;
+}
+.header{
+    position: relative;
+    height: 1080px;
+    border:2px solid black;
+}
+.fnav{
+   
+    background-color: black;
+    position: fixed;
+    width: 92%;
+    left: 50px;
+    right: 50px;
+    height: 71px;
+    
+}
+.logo1 img{
+    position: absolute;
+    height:71px;
+    width: 80px;
+}
+.logo2 img{
+    position: absolute;
+    filter: invert(1);
+    width: 141px;
+    height: 29px;
+    top: 19px;
+    left: 76%;
+}
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin: 15px;
+    left: 72px;
+}
+.nav li{
+    list-style: none;
+    padding: 10px;
+    margin-left: 10px;
+}
+.nav li a{
+   
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.781);;
+    padding: 5px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+.search{
+   border-left: 1px solid rgba(255, 255, 255, 0.5);
+   width: 29px;
+   height: 72px;
+   float: right;
+   color: rgba(255, 255, 255, 0.781);
+   position: relative;
+   right: 50px;
+}
+.search .fas{
+    position: absolute;
+    width: 33px;
+    height: 10px;
+    left: 28px;
+    top: 28px;
+    font-size: larger;
+}
+.nav li a:hover{
+    color: white;
+    font-size: 20px;
+    transition: 0.2s;
+}
+.search .fas:hover{
+    color: white;
+    transition: 0.2s;
+    display: block;
+}
+.nav ul ul{
+    position: absolute;
+    background-color: black;
+    display: none;
+    top: 29px;
+    left: -102px;
+    width: 1257px;
+    height: 85px;
+    opacity: 0.7;
+}
+.nav ul li:hover > ul{
+    display: flex;
+    transition: 0.3s;
+}
+.nav ul ul li{
+    position: relative;
+    top: 20px;
+
+}
+/* -----------navbar end here----------- */
+.para{
+    position: relative;
+    left: 449px;
+    top:250px;
+    height: 115px;
+    width: 449px;
+    text-align: center;
+}
+.para h1{
+    font-family: 'Noto Serif', serif;
+    color: black;
+}
+.para p{
+    text-align: center;
+    font-size: 21px;
+    text-shadow: 1px 1px 2px blue;
+}
+.latest{
+    height: 42px;
+    position: relative;
+    width: 140px;
+    left: 600px;
+    top: 410px;
+    border-radius: 10px;
+}
+.latest .text{
+    position: absolute;
+    width: 70%;
+    left: 47px;
+    color: white;
+    background-color: rgb(65, 179, 224);
+    height: 100%;
+    padding-top: 14px;
+    padding-left: 5px;
+    border-top-right-radius:10px ;
+    border-bottom-right-radius: 10px;
+    font-size: 15px;
+}
+.latest .dwnkey{
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(76, 159, 238);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.latest .dwnkey .fas{
+    color:#fff;
+    padding-top: 14px;
+    padding-left: 16px;
+}
+.latest .text:hover,.latest .dwnkey:hover{
+    background-color: steelblue;
+    cursor: pointer;
+}
+/* -----------------------latest button------------------ */
+@media only screen and (max-width:600px){
+   .fnav{
+    position: relative;
+    width:540px;
+    height: 85px;
+    margin-top: 20px;
+    left: 0px;
+}
+.logo2 img,.serach .fas{
+    display: none;
+}
+.latest{
+    display: none;
+}
+.para{
+    position: absolute;
+    left: 50px;
+    top:343px;
+
+}
+body{
+    background-repeat: no-repeat;
+    background-size: 1280px,720px;
+}
+.nav ul li:hover > ul{
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+.nav ul ul{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    left: 0px;
+}
+.serach {
+    display: none;
+    opacity: 0;
+    border-left: 0px solid white;
+}
+.nav ul{
+    margin-left: 0px;
+}
+}
