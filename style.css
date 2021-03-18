@@ -74,11 +74,26 @@ body{
     top: 28px;
     font-size: larger;
 }
+
 .nav li a:hover{
     color: white;
-    font-size: 20px;
+    
     transition: 0.2s;
+    animation-name: test;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
+@keyframes test{
+    from{
+        color:white;
+    }
+    to{
+        color: tomato;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+}
+
 .search .fas:hover{
     color: white;
     transition: 0.2s;
