@@ -80,7 +80,7 @@ body{
     
     transition: 0.2s;
     animation-name: test;
-    animation-duration: 0.5s;
+    animation-duration: 0.2s;
     animation-fill-mode: forwards;
 }
 @keyframes test{
